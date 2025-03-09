@@ -132,8 +132,8 @@ void loop() {
           }
         } 
         else {   
-          //driveForward(); 
-          //moving = 1;
+          driveForward(); 
+          moving = 1;
         }
       }
     }
