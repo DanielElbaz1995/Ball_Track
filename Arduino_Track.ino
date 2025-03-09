@@ -247,21 +247,17 @@ void runMotorForDuration(void (*motorFunction)(int), int control_signal, int int
 }
 
 long getUltrasonicDistance() {
-  // Clear the trigPin by setting it LOW
   digitalWrite(trig_pin, LOW);
   delayMicroseconds(2);
   
-  // Trigger the sensor by setting the trigPin HIGH for 10 microseconds
   digitalWrite(trig_pin, HIGH);
   delayMicroseconds(10);
   digitalWrite(trig_pin, LOW);
   
-  // Read the echoPin. The pulseIn() function returns the duration (in microseconds)
   long duration = pulseIn(echo_pin, HIGH, 30000);
 
   if (duration == 0) {
-    // No echo detected (timeout)
-    return 999; // Arbitrarily high value to indicate no object detected
+    return 999;  // No echo detected (timeout)
   }
   
   // Calculate the distance (in centimeters)
