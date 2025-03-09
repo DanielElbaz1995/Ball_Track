@@ -4,7 +4,7 @@ This project demonstrates a robotic car that detects a ball using TensorFlow Lit
 
 #  Project Overview
 
-A Raspberry Pi runs a real-time object detection model using TensorFlow Lite.
+A Raspberry Pi runs a real-time object detection model using TensorFlow Lite. \n
 The camera captures frames, and the TF-Lite model detects the ball's position (center X).
 The Raspberry Pi sends the ball’s X-coordinate to the Arduino
 A PID controller calculates the error between the ball’s position and the center of the camera frame.
