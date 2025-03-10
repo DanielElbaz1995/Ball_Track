@@ -2,8 +2,9 @@
 
 This project demonstrates a robotic car that detects a ball using TensorFlow Lite on a Raspberry Pi and controls the car's movement using a PID controller on an Arduino Uno. The goal is to detect the ball in real time, center it within the camera frame, and drive toward it autonomously.
 
-<img src="https://github.com/user-attachments/assets/f3ea0004-dc68-44ab-a4ed-a525bb53bed9" width="400" height="300" />
-
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/f3ea0004-dc68-44ab-a4ed-a525bb53bed9" width="400" />
+</p>
 
 #  Project Overview
 
